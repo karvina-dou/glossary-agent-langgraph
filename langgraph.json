@@ -3,7 +3,7 @@
     "COPY data/ /app/data/"
   ],
   "graphs": {
-    "agent": "./abbr_agent/agent.py:AbbrAgent"
+    "agent": "./abbr_agent/agent.py:graph"
   },
   "env": ".env",
   "python_version": "3.11",

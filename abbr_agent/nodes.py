@@ -119,51 +119,20 @@ class AbbrNodes:
         new_text = replace_abbr_in_text(text, abbr, replacement)
         
         return {"process_text": new_text}
-
-    def process_abbr(self, state: ProcessState):
-        workflow = StateGraph(ProcessState)
-        
-        workflow.add_node("lookup_abbr", self.lookup_abbr)
-        workflow.add_node("guess_abbr", self.guess_abbr)
-        workflow.add_node("validate_abbr", self.validate_abbr)
-        workflow.add_node("replace_abbr", self.replace_abbr)
-        
-        workflow.set_entry_point("lookup_abbr")
-        
-        def exist_expansions(state: LookupState):
-            if len(state["expansions"]) >= 1:
-                return "validate_abbr"
-            else:
-                return "guess_abbr"
-            
-        workflow.add_conditional_edges(
-            "lookup_abbr",
-            exist_expansions,
-            {
-                "validate_abbr": "validate_abbr",
-                "guess_abbr": "guess_abbr"
-            }
-        )
-        
-        workflow.add_edge("validate_abbr", "replace_abbr")
-        workflow.add_edge("guess_abbr", "replace_abbr")
-        workflow.add_edge("replace_abbr", END)
-        
-        app = workflow.compile()
-        
+    
+    def process_abbr(self, state: ProcessState) -> Dict[str, Any]:
+        from abbr_agent.agent import agent
         process_text = state["input_text"]
         detected_abbr = state["detected_abbr"]
         abbr_expansions = {}
-        print(detected_abbr)
+        
         for abbr in detected_abbr:
-            
-            result = app.invoke({
+            result = agent.workflow.invoke({
                 "input_text": process_text,
                 "current_abbr": abbr,
                 "expansions": [],
                 "replacement": ""
             })
-            # print(result)
             process_text = result["process_text"]
             abbr_expansions[abbr] = result["replacement"]
             

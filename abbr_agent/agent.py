@@ -1,55 +1,58 @@
 from langgraph.graph import StateGraph, END
 from abbr_agent.nodes import AbbrNodes
-from abbr_agent.state import DetectState, ProcessState
+from abbr_agent.state import DetectState, LookupState, GuessState, ValidateState, ReplaceState, ProcessState
 
 class AbbrAgent:
     def __init__(self):
         self.nodes = AbbrNodes()
+        self.workflow = self.build_workflow()
         
     def build_workflow(self):
         workflow = StateGraph(ProcessState)
         
+        # Add all nodes here
         workflow.add_node("detect_abbr", self.nodes.detect_abbr)
-        workflow.add_node("process_abbr", self.nodes.process_abbr)
+        workflow.add_node("lookup_abbr", self.nodes.lookup_abbr)
+        workflow.add_node("guess_abbr", self.nodes.guess_abbr)
+        workflow.add_node("validate_abbr", self.nodes.validate_abbr)
+        workflow.add_node("replace_abbr", self.nodes.replace_abbr)
         
         def should_process(state: DetectState):
             if state["detected_abbr"] == ['None']:
                 return END
             else:
-                return "process_abbr"
+                return "lookup_abbr"
+        
+        def exist_abbr(state: LookupState):
+            if len(state["expansions"]) >= 1:
+                return "validate_abbr"
+            else:
+                return "guess_abbr"
         
         workflow.set_entry_point("detect_abbr")
         workflow.add_conditional_edges(
             "detect_abbr",
             should_process,
             {
-                "process_abbr": "process_abbr",
+                "lookup_abbr": "lookup_abbr",
                 END: END
             }
         )
-        workflow.add_edge("process_abbr", END)
+
+        workflow.add_conditional_edges(
+            "lookup_abbr",
+            exist_abbr,
+            {
+                "validate_abbr": "validate_abbr",
+                "guess_abbr": "guess_abbr"
+            }
+        )
+        
+        workflow.add_edge("validate_abbr", "replace_abbr")
+        workflow.add_edge("guess_abbr", "replace_abbr")
+        workflow.add_edge("replace_abbr", END)
         
         return workflow.compile()
-
-    def chat(self):
-        workflow = self.build_workflow()
-        
-        print("This is an AI assistant for abbreviation detection. If you want to end the conversation, please enter 'exit'.")
-        while True:
-            user_input = input("\ninput: ")
-            if user_input == 'exit':
-                break
-            
-            self.abbr_expansions = {}
-            
-            result = workflow.invoke({
-                "input_text": user_input,
-                "process_text": user_input,
-                "detected_abbr": []
-            })
-            
-            if "abbr_expansions" in result:
-                self.abbr_expansions.update(result["abbr_expansions"])
-            
-            print(f"Detected abbreviations and their expansions:\n {self.abbr_expansions}")
-            print(f"After expanding all the abbreviations, the full text will be:\n {result['process_text']}")
+    
+agent = AbbrAgent()
+graph = agent.workflow
