@@ -1,7 +1,13 @@
 {
-    "dependencies": ["./abbr_agent"],
-    "graphs": {
-        "agent": "./abbr_agent/agent.py:graph"
-    },
-    "env": ".env"
+  "dockerfile_lines": [
+    "COPY data/ /app/data/"
+  ],
+  "graphs": {
+    "agent": "./abbr_agent/agent.py:AbbrAgent"
+  },
+  "env": ".env",
+  "python_version": "3.11",
+  "dependencies": [
+    "."
+  ]
 }

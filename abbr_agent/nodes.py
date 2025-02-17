@@ -3,8 +3,8 @@ from typing import Dict, Any
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, END
 from langchain_core.messages import HumanMessage
-from .utils import load_grocery, replace_abbr_in_text
-from .state import DetectState, LookupState, GuessState, ValidateState, ReplaceState, ProcessState
+from abbr_agent.utils import load_grocery, replace_abbr_in_text
+from abbr_agent.state import DetectState, LookupState, GuessState, ValidateState, ReplaceState, ProcessState
 
 grocery = load_grocery()
 

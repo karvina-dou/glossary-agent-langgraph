@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, END
-from .nodes import AbbrNodes
-from .state import DetectState, LookupState, GuessState, ValidateState, ReplaceState, ProcessState
+from abbr_agent.nodes import AbbrNodes
+from abbr_agent.state import DetectState, ProcessState
 
 class AbbrAgent:
     def __init__(self):
@@ -16,7 +16,7 @@ class AbbrAgent:
             if state["detected_abbr"] == ['None']:
                 return END
             else:
-                return "process_abbr"  
+                return "process_abbr"
         
         workflow.set_entry_point("detect_abbr")
         workflow.add_conditional_edges(
