@@ -1,12 +1,23 @@
 import re
+import json
+from pathlib import Path
 from typing import Dict, Any
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, END
 from langchain_core.messages import HumanMessage
-from abbr_agent.utils import load_grocery, replace_abbr_in_text
 from abbr_agent.state import DetectState, LookupState, GuessState, ValidateState, ReplaceState, ProcessState
 
-grocery = load_grocery()
+def load_glossary(file_path=None):
+    if not file_path:
+        base_dir = Path(__file__).resolve().parent.parent
+        file_path = base_dir / "data" / "glossary.jsonl"
+        
+    abbr_dict = {}
+    with open(file_path, 'r') as file:
+        for line in file:
+            record = json.loads(line.strip())
+            abbr_dict[record['abbreviation']] = record['expansions']
+    return abbr_dict
 
 class AbbrNodes:
     def __init__(self):
@@ -17,6 +28,7 @@ class AbbrNodes:
             max_tokens=2048,
             temperature=1,
         )
+        self.glossary = load_glossary()
         
     def detect_abbr(self, state: DetectState) -> Dict[str, Any]:
 
@@ -52,8 +64,8 @@ class AbbrNodes:
         return {"detected_abbr": detected_abbr}
 
     def lookup_abbr(self, state: LookupState) -> Dict[str, Any]:
-        expansions = grocery.get(state["current_abbr"], [])
-        # print("looking up the grocery......")
+        expansions = self.glossary.get(state["current_abbr"], [])
+        # print("looking up the glossary......")
         # print("")
         return {"expansions": expansions}
 
@@ -116,7 +128,8 @@ class AbbrNodes:
         abbr = state['current_abbr']
         replacement = state['replacement']
         
-        new_text = replace_abbr_in_text(text, abbr, replacement)
+        pattern = re.compile(r'\b' + re.escape(abbr) + r'\b', re.IGNORECASE)
+        new_text = pattern.sub(replacement, text)
         
         return {"process_text": new_text}
     
