@@ -51,5 +51,5 @@ class AbbrAgent:
             if "abbr_expansions" in result:
                 self.abbr_expansions.update(result["abbr_expansions"])
             
-            print(f"\nAfter expanding all the abbreviations, the full text will be:\n {result['process_text']}")
-            print(f"\nDetected abbreviations and their expansions:\n {self.abbr_expansions}")
+            print(f"Detected abbreviations and their expansions:\n {self.abbr_expansions}")
+            print(f"After expanding all the abbreviations, the full text will be:\n {result['process_text']}")
