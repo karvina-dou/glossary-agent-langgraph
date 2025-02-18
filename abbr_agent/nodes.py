@@ -2,7 +2,7 @@ import re
 import json
 from pathlib import Path
 from typing import Dict, Any
-from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
 from langgraph.graph import StateGraph, END
 from langchain_core.messages import HumanMessage
 from abbr_agent.state import DetectState, LookupState, GuessState, ValidateState, ReplaceState, ProcessState
@@ -21,10 +21,19 @@ def load_glossary(file_path=None):
 
 class AbbrNodes:
     def __init__(self):
-        self.model = ChatOpenAI(
-            model="qwen/qwen2.5-3B-instruct",
+        # self.model = ChatOpenAI(
+        #     model="qwen/qwen2.5-3B-instruct",
+        #     api_key="12345678",
+        #     openai_api_base = "http://localhost:8000/v1",
+        #     max_tokens=2048,
+        #     temperature=1,
+        # )
+        # self.glossary = load_glossary()
+        
+        self.model = ChatOllama(
+            model="qwen2.5:7b",
             api_key="12345678",
-            openai_api_base = "http://localhost:8000/v1",
+            openai_api_base = "http://localhost:11434/v1",
             max_tokens=2048,
             temperature=1,
         )
