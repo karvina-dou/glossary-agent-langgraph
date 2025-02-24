@@ -1,0 +1,8 @@
+TheDesktop Management Interface(DMI) generates a standardframeworkfor managing and trackingcomponentsin a desktop, notebook or servercomputer, byabstractingthese components from the software that manages them. The development of DMI, 2.0 version June 24, 1998,marked the first move by theDistributed Management Task Force(DMTF) into desktop-management standards.Before the introduction of DMI, no standardized source of information could provide details about components in apersonal computer.
+Due to the rapid development of DMTF technologies, such asCommon Information Model(CIM), the DMTF defined an "End of Life" process for DMI, which ended on March 31, 2005.
+From 1999,MicrosoftrequiredOEMsand BIOS vendors to support the DMI interface/data-set in order to have Microsoft certification.
+DMI exposes system data (including theSystem Management BIOS(SMBIOS) data) to management software, but the two specifications function independently.
+DMI is commonly confused with SMBIOS, which was actually called DMIBIOS in its first revisions.
+When software queries a memory-resident agent that resides in the background, it responds by sending data in MIFs (Management Information Format) or activating MIF routines. Static data in a MIF would contain items such as model ID, serial number, memory- and port-addresses. A MIF routine could read memory and report its contents.
+DMI can co-exist withSNMPand other management protocols. For example, when an SNMP query arrives, DMI can fill out the SNMPMIBwith data from its MIF. A single workstation or server can serve as a proxy agent that would contain the SNMP module and service an entireLANsegment of DMI-capable machines.
+Thiscomputer networkingarticle is astub. You can help Wikipedia byexpanding it.

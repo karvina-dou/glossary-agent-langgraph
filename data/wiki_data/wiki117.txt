@@ -1,0 +1,8 @@
+Cisco HDLC(cHDLC) is an extension to theHigh-Level Data Link Control(HDLC) network protocol, and was created byCisco Systems, Inc.  HDLC is a bit-oriented synchronousdata link layerprotocolthat was originally developed by theInternational Organization for Standardization(ISO).  Often described as being a proprietary extension, the details of cHDLC have been widely distributed and the protocol has been implemented by many network equipment vendors. cHDLC extends HDLC with multi-protocol support.
+Cisco HDLCframesuses an alternative framing structure to the standard ISOHDLC.  To support multiple protocols encapsulation, cHDLC frames contain a field for identifying thenetwork protocol.
+The following table describes the structure of a cHDLC frame on the wire.
+The Serial Line Address Resolution Protocol (SLARP) frame is designated by a specific cHDLC protocol code field value of 0x8035.
+Three types of SLARP frame are defined: address requests (0x00), address replies (0x01), and keep-alive frames (0x02).
+The following table shows the structure of a SLARP cHDLC address request–response frame.
+The following table shows the structure of a SLARP cHDLC keep-alive frame.
+Thiscomputer networkingarticle is astub. You can help Wikipedia byexpanding it.

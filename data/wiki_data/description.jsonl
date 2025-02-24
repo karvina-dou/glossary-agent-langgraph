@@ -1,0 +1,151 @@
+{"abbreviation": "ACK", "description": "A signal sent by a receiver to indicate successful receipt of a message or data packet."}
+{"abbreviation": "ACL", "description": "A list of permissions attached to an object that specifies which users or system processes can access the object and what operations they can perform."}
+{"abbreviation": "ADSL", "description": "A type of DSL broadband communications technology used for connecting to the internet, with faster download speeds than upload speeds."}
+{"abbreviation": "AES", "description": "A symmetric encryption algorithm widely used across the globe to secure data, known for its speed and security."}
+{"abbreviation": "API", "description": "A set of rules and protocols for building and interacting with software applications, allowing different software systems to communicate with each other."}
+{"abbreviation": "ARP", "description": "A protocol used for mapping an IP address to a physical machine address that is recognized in the local network."}
+{"abbreviation": "ATM", "description": "A networking technology that uses fixed-size cells to transmit data, voice, and video over a single network."}
+{"abbreviation": "BGP", "description": "A standardized exterior gateway protocol used to exchange routing information between different networks on the internet."}
+{"abbreviation": "BSS", "description": "The basic building block of a wireless LAN, consisting of a group of stations that communicate with each other."}
+{"abbreviation": "CAT", "description": "A classification of twisted pair cables used in networking, with different categories indicating different performance levels."}
+{"abbreviation": "CCITT", "description": "The International Telegraph and Telephone Consultative Committee, which was responsible for telecommunications standards before being replaced by the ITU-T."}
+{"abbreviation": "CHAP", "description": "A protocol used to authenticate a user or network host to an authenticating entity, often used in PPP connections."}
+{"abbreviation": "CIDR", "description": "A method for allocating IP addresses and routing internet traffic that replaces the older system based on classes A, B, and C."}
+{"abbreviation": "CIR", "description": "The average rate at which a network agrees to transfer information under normal conditions, used in Frame Relay networks."}
+{"abbreviation": "CLI", "description": "A user interface that allows users to interact with the computer's operating system or software by typing commands."}
+{"abbreviation": "CPE", "description": "Equipment such as telephones, routers, and modems that is located at the customer's premises and connected to the service provider's network."}
+{"abbreviation": "CPU", "description": "The primary component of a computer that performs most of the processing inside a computer."}
+{"abbreviation": "CRC", "description": "An error-detecting code used to detect accidental changes to raw data in digital networks and storage devices."}
+{"abbreviation": "CRC-16-CCITT", "description": "A specific type of CRC used in X.25 and HDLC protocols to ensure data integrity."}
+{"abbreviation": "CRT", "description": "A technology used in traditional television sets and computer monitors, where electrons are fired at a phosphorescent screen to create images."}
+{"abbreviation": "CSMA/CA", "description": "A network protocol that listens for a carrier signal before trying to transmit data to avoid collisions in wireless networks."}
+{"abbreviation": "CSMA/CD", "description": "A network protocol that detects collisions in a network and takes steps to resolve them, commonly used in Ethernet networks."}
+{"abbreviation": "CSU/DSU", "description": "A device used to connect a digital data line to a router or other network device, converting digital data from a local area network to a form suitable for a wide area network."}
+{"abbreviation": "CMOS", "description": "A technology used in microprocessors, microcontrollers, and other digital logic circuits, known for its low power consumption."}
+{"abbreviation": "DAM", "description": "A system for storing, organizing, and managing digital assets such as images, videos, and documents."}
+{"abbreviation": "DCE", "description": "Equipment that provides a path for data transmission, typically including modems and other devices that connect to a network."}
+{"abbreviation": "DEC", "description": "A company that was a major American manufacturer of computers and related products, known for its PDP and VAX series of computers."}
+{"abbreviation": "DES", "description": "A symmetric-key algorithm for the encryption of digital data, now considered obsolete and replaced by the Advanced Encryption Standard (AES)."}
+{"abbreviation": "DHCP", "description": "A network management protocol used to dynamically assign IP addresses to devices on a network, allowing them to communicate with other IP networks."}
+{"abbreviation": "DIMM", "description": "A type of memory module used in computers, characterized by having separate electrical contacts on each side of the module."}
+{"abbreviation": "DNS", "description": "A hierarchical system for naming resources on the internet, translating human-readable domain names into IP addresses."}
+{"abbreviation": "DRAM", "description": "A type of random-access memory that stores each bit of data in a separate capacitor, commonly used in computers and other devices."}
+{"abbreviation": "DSL", "description": "A family of technologies that provide internet access by transmitting digital data over the wires of a local telephone network."}
+{"abbreviation": "DSLAM", "description": "A network device that receives signals from multiple customer DSL connections and aggregates them onto a high-speed backbone line."}
+{"abbreviation": "DTE", "description": "Equipment that serves as the source or destination of data, typically including computers, terminals, and other devices that generate or use data."}
+{"abbreviation": "DMI", "description": "A framework for managing and tracking hardware and software components in a computer system."}
+{"abbreviation": "EHA", "description": "A unique identifier assigned to network interfaces for communications on the physical network segment, also known as a MAC address."}
+{"abbreviation": "EIGRP", "description": "An advanced distance-vector routing protocol used on a computer network for automating routing decisions and configuration."}
+{"abbreviation": "EOF", "description": "A marker used in data transmission to indicate the end of a data frame, commonly used in protocols like HDLC."}
+{"abbreviation": "ESS", "description": "A set of interconnected basic service sets (BSS) that appear as a single network to the logical link control layer at any station associated with one of those BSSs."}
+{"abbreviation": "FCC", "description": "An independent agency of the United States government that regulates communications by radio, television, wire, satellite, and cable."}
+{"abbreviation": "FCC", "description": "An independent agency of the United States government that regulates communications by radio, television, wire, satellite, and cable."}
+{"abbreviation": "FCS", "description": "An error-detecting code added to a frame in Ethernet networks to ensure data integrity during transmission."}
+{"abbreviation": "FDDI", "description": "A set of standards for data transmission on fiber optic lines in a local area network that can extend in range up to 200 kilometers."}
+{"abbreviation": "FTP", "description": "A standard network protocol used to transfer files from one host to another over a TCP-based network, such as the internet."}
+{"abbreviation": "GBIC", "description": "A transceiver that converts electric currents to optical signals and vice versa, used in gigabit Ethernet and fiber channel networks."}
+{"abbreviation": "gbps", "description": "A unit of data transfer rate equal to one billion bits per second, commonly used to measure bandwidth and data transfer speeds."}
+{"abbreviation": "GEPOF", "description": "A technology that enables gigabit Ethernet transmission over plastic optical fiber, offering a cost-effective and flexible alternative to traditional glass fiber."}
+{"abbreviation": "HDLC", "description": "A bit-oriented code-transparent synchronous data link layer protocol developed by the International Organization for Standardization (ISO).'"}
+{"abbreviation": "HTTP", "description": "A protocol used for transmitting hypertext requests and information on the internet, forming the foundation of data communication for the World Wide Web."}
+{"abbreviation": "HTTPS", "description": "An extension of HTTP that uses encryption to secure data communication over a computer network, widely used for secure transactions on the internet."}
+{"abbreviation": "IaaS", "description": "A form of cloud computing that provides virtualized computing resources over the internet, allowing businesses to rent infrastructure like servers and storage."}
+{"abbreviation": "ICMP", "description": "A network layer protocol used by network devices to diagnose network communication issues and report errors."}
+{"abbreviation": "IDF", "description": "A distribution frame in a building or campus that connects and manages telecommunications wiring between an MDF and individual devices."}
+{"abbreviation": "IDS", "description": "A system that monitors network traffic for suspicious activity and alerts administrators of potential security breaches."}
+{"abbreviation": "IMAP", "description": "An internet standard protocol used by email clients to retrieve messages from a mail server, allowing users to view and manage their email."}
+{"abbreviation": "IP", "description": "A set of rules governing the format of data sent over the internet or other network, responsible for addressing and routing packets of data."}
+{"abbreviation": "IPS", "description": "A network security system that monitors and controls incoming and outgoing network traffic to prevent and respond to potential threats."}
+{"abbreviation": "IS-IS", "description": "A routing protocol designed to move information efficiently within a computer network, used primarily in large service provider networks."}
+{"abbreviation": "ISDN", "description": "A set of communication standards for simultaneous digital transmission of voice, video, data, and other network services over traditional telephone networks."}
+{"abbreviation": "ISP", "description": "A company that provides individuals and organizations access to the internet and other related services."}
+{"abbreviation": "ITU-T", "description": "A specialized agency of the United Nations responsible for issues related to information and communication technologies, including setting global telecommunications standards."}
+{"abbreviation": "kbps", "description": "A unit of data transfer rate equal to one thousand bits per second, commonly used to measure internet connection speeds."}
+{"abbreviation": "LACP", "description": "A protocol used to control the bundling of several physical ports together to form a single logical channel for increased bandwidth and redundancy."}
+{"abbreviation": "LAN", "description": "A network that connects computers and other devices within a limited area, such as a home, school, or office building."}
+{"abbreviation": "LLC", "description": "A sublayer of the data link layer in the OSI model that provides interface and control functions to ensure reliable data transfer."}
+{"abbreviation": "MAC", "description": "A unique identifier assigned to network interfaces for communications on the physical network segment, also known as a hardware address."}
+{"abbreviation": "MAM", "description": "A system for managing and organizing media assets, often used in conjunction with digital asset management systems."}
+{"abbreviation": "MAN", "description": "A network that connects multiple local area networks within a metropolitan area, providing high-speed connectivity over a larger geographic area."}
+{"abbreviation": "Mbps", "description": "A unit of data transfer rate equal to one million bits per second, commonly used to measure internet connection speeds."}
+{"abbreviation": "MDF", "description": "A distribution frame that connects and manages telecommunications wiring between an IDF and external communication lines."}
+{"abbreviation": "MIB", "description": "A database used for managing the entities in a communication network, commonly used with the Simple Network Management Protocol (SNMP)."}
+{"abbreviation": "MII", "description": "A standard interface used to connect a network device, such as a computer or router, to a physical medium, such as Ethernet."}
+{"abbreviation": "MoCA", "description": "An alliance that develops standards for networking over coaxial cable, enabling high-speed data transfer and multimedia distribution within homes."}
+{"abbreviation": "MPLS", "description": "A technique used in high-performance telecommunications networks to direct data from one network node to the next based on short path labels rather than long network addresses."}
+{"abbreviation": "MTU", "description": "The largest size of a packet or frame that can be sent in a packet- or frame-based network, ensuring efficient data transmission."}
+{"abbreviation": "NAC", "description": "A security solution that controls access to a network by enforcing policies, ensuring that only authorized and compliant devices can connect."}
+{"abbreviation": "NAS", "description": "A storage device connected to a network that allows data to be accessed by multiple users and devices, providing centralized data storage and management."}
+{"abbreviation": "NAT", "description": "A method used in networking to modify network address information in packet headers while in transit, enabling multiple devices on a local network to share a single public IP address."}
+{"abbreviation": "NBMA", "description": "A type of network that does not support broadcast or multicast traffic, commonly used in technologies like Frame Relay and ATM."}
+{"abbreviation": "NIC", "description": "A hardware component that connects a computer to a network, allowing it to communicate with other devices on the network."}
+{"abbreviation": "NRZ", "description": "A method of mapping a binary signal to a physical signal for transmission over a transmission medium, where the signal does not return to zero between bits."}
+{"abbreviation": "NRZI", "description": "A method of mapping a binary signal to a physical signal for transmission over a transmission medium, where a change in the signal level represents a binary 1 and no change represents a binary 0."}
+{"abbreviation": "NVRAM", "description": "A type of memory that retains its data even when the power is turned off, commonly used for storing firmware and configuration settings."}
+{"abbreviation": "OSI", "description": "A conceptual framework used to understand and implement network protocols in seven layers, developed jointly by the ISO and ITU."}
+{"abbreviation": "OSPF", "description": "A routing protocol used to find the best path for data exchange in an IP network, based on the shortest path first (SPF) algorithm."}
+{"abbreviation": "OUI", "description": "A 24-bit number that uniquely identifies a vendor, manufacturer, or organization, used as the first part of a MAC address."}
+{"abbreviation": "PAP", "description": "A simple authentication protocol used to validate users before allowing them access to a network, transmitting passwords in plaintext."}
+{"abbreviation": "PAT", "description": "A type of network address translation that maps multiple private IP addresses to a single public IP address using different ports."}
+{"abbreviation": "PaaS", "description": "A cloud computing service that provides a platform allowing customers to develop, run, and manage applications without dealing with the underlying infrastructure."}
+{"abbreviation": "PC", "description": "A general-purpose computer designed for individual use, capable of running a wide variety of software applications."}
+{"abbreviation": "PIM", "description": "A type of software application that helps users manage personal information such as contacts, appointments, and tasks."}
+{"abbreviation": "PCM", "description": "A method used to digitally represent analog signals, commonly used in digital telephony and audio recording."}
+{"abbreviation": "PDU", "description": "A unit of data specified in a protocol of a given layer, such as a segment, packet, or frame, used for communication between network devices."}
+{"abbreviation": "POP3", "description": "A protocol used by email clients to retrieve messages from a mail server, allowing users to download and manage their email locally."}
+{"abbreviation": "POP", "description": "A physical location where different networks or communication devices connect to the internet or other networks."}
+{"abbreviation": "POST", "description": "A diagnostic testing sequence run by a computer\u2019s firmware or software to check hardware components before starting the operating system."}
+{"abbreviation": "POTS", "description": "A traditional telephone service that uses analog signal transmission over copper wires."}
+{"abbreviation": "PPP", "description": "A data link protocol used to establish a direct connection between two networking nodes, providing authentication, encryption, and compression."}
+{"abbreviation": "PPTP", "description": "A method for implementing virtual private networks, using a control channel over TCP and a GRE tunnel to encapsulate PPP packets."}
+{"abbreviation": "PTT", "description": "A term referring to government-owned or regulated telecommunications services, including telephone and telegraph services."}
+{"abbreviation": "PVST", "description": "A Cisco proprietary protocol that allows each VLAN to have a separate spanning tree, enhancing network performance and redundancy."}
+{"abbreviation": "RADIUS", "description": "A networking protocol that provides centralized authentication, authorization, and accounting for users who connect and use a network service."}
+{"abbreviation": "RAM", "description": "A type of computer memory that can be accessed randomly, used for storing working data and machine code currently in use."}
+{"abbreviation": "RARP", "description": "A protocol used to map a known MAC address to an IP address, allowing a device to request its IP address from a gateway server."}
+{"abbreviation": "RIMM", "description": "A type of memory module developed by Rambus Inc., used in computers for high-speed data transfer."}
+{"abbreviation": "RFC", "description": "A formal document from the Internet Engineering Task Force (IETF) that describes the specifications, protocols, procedures, and policies for the internet."}
+{"abbreviation": "RIP", "description": "A distance-vector routing protocol used in local and wide area networks to determine the best route for data packets based on the hop count."}
+{"abbreviation": "RLL", "description": "A method of encoding data to increase the storage density and reliability of magnetic storage media."}
+{"abbreviation": "ROM", "description": "A type of non-volatile memory used in computers and other electronic devices to store firmware and other permanent data."}
+{"abbreviation": "RSTP", "description": "An evolution of the Spanning Tree Protocol that provides faster convergence and improved network topology changes."}
+{"abbreviation": "RTP", "description": "A protocol used for delivering audio and video over IP networks, providing end-to-end network transport functions suitable for real-time data."}
+{"abbreviation": "SaaS", "description": "A software distribution model in which applications are hosted by a service provider and made available to customers over the internet."}
+{"abbreviation": "SDLC", "description": "A protocol used in synchronous communication networks to manage the transmission of data between network devices."}
+{"abbreviation": "SDN", "description": "An approach to networking that uses software-based controllers to manage network resources and traffic, allowing for more flexible and efficient network management."}
+{"abbreviation": "SFD", "description": "A field in a data frame that indicates the start of the frame, used in Ethernet and HDLC protocols."}
+{"abbreviation": "SFP", "description": "A compact, hot-pluggable transceiver used for both telecommunication and data communications applications."}
+{"abbreviation": "S-HTTP", "description": "An obsolete protocol designed to provide secure communication over the internet, rarely used today."}
+{"abbreviation": "SLARP", "description": "A protocol used to obtain an IP address for a serial interface in a Cisco router, similar to ARP but for serial links."}
+{"abbreviation": "SLIP", "description": "An older protocol used for point-to-point serial connections, now largely replaced by PPP."}
+{"abbreviation": "SIMM", "description": "A type of memory module with a single row of connectors, used in older computers for RAM."}
+{"abbreviation": "SMTP", "description": "A protocol used for sending email messages between servers, as well as from email clients to servers."}
+{"abbreviation": "SNA", "description": "A proprietary networking architecture developed by IBM to connect and manage communication between computers and devices."}
+{"abbreviation": "SNAP", "description": "A protocol used to encapsulate network layer protocols over IEEE 802 networks, providing a way to identify the protocol being carried."}
+{"abbreviation": "SNMP", "description": "A protocol used for network management, allowing administrators to monitor and manage network devices and their functions."}
+{"abbreviation": "SOF", "description": "A marker used in data transmission to indicate the beginning of a data frame, ensuring proper synchronization."}
+{"abbreviation": "SRAM", "description": "A type of memory that uses bistable latching circuitry to store each bit, providing faster access times than DRAM."}
+{"abbreviation": "SSH", "description": "A protocol used to securely access and manage network devices and servers over an unsecured network."}
+{"abbreviation": "SSID", "description": "A unique identifier that names a wireless local area network, allowing devices to connect to the correct network."}
+{"abbreviation": "STP", "description": "A network protocol that prevents loops in network topologies by creating a spanning tree, ensuring a loop-free network."}
+{"abbreviation": "SYN", "description": "A control flag in the TCP header used to initiate a connection between two hosts in a TCP/IP network."}
+{"abbreviation": "TCP/IP", "description": "A suite of communication protocols used to interconnect network devices on the internet, providing end-to-end data communication."}
+{"abbreviation": "TDM", "description": "A method of transmitting multiple signals over a single communication channel by dividing the channel into time slots."}
+{"abbreviation": "TFTP", "description": "A simple file transfer protocol used for transferring files over a network, typically used for booting devices and transferring configuration files."}
+{"abbreviation": "TIA", "description": "A trade association that develops standards for the telecommunications industry, including cabling and network infrastructure."}
+{"abbreviation": "TOFU", "description": "A security model where a device or user is trusted the first time they connect, with subsequent connections being monitored for anomalies."}
+{"abbreviation": "UDP", "description": "A communication protocol used for time-sensitive transmissions such as video playback or DNS lookups, providing low-latency and loss-tolerating connections."}
+{"abbreviation": "URL", "description": "A reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it."}
+{"abbreviation": "USB", "description": "A standard for connecting peripherals to a computer, providing data transfer and power supply through a single cable."}
+{"abbreviation": "UTP", "description": "A type of twisted pair cabling used in networking, characterized by the absence of additional shielding to protect against electromagnetic interference."}
+{"abbreviation": "VC", "description": "A logical connection created within a network to ensure reliable data transfer between two devices."}
+{"abbreviation": "VLAN", "description": "A network configuration that allows devices on different physical LANs to communicate as if they were on the same LAN, improving network management and security."}
+{"abbreviation": "VLSM", "description": "A technique used in IP addressing that allows for more efficient use of IP address space by varying the length of the subnet mask."}
+{"abbreviation": "VM", "description": "A software-based emulation of a physical computer, allowing multiple operating systems to run on a single physical machine."}
+{"abbreviation": "VPN", "description": "A technology that creates a secure, encrypted connection over a less secure network, such as the internet, to provide remote access and protect data."}
+{"abbreviation": "WAN", "description": "A telecommunications network that extends over a large geographic area, connecting multiple local area networks (LANs).'"}
+{"abbreviation": "WEP", "description": "A security protocol for wireless networks that provides data encryption, now considered insecure and largely replaced by WPA."}
+{"abbreviation": "Wi-Fi", "description": "A technology that allows electronic devices to connect to a wireless local area network (WLAN), based on the IEEE 802.11 standards."}
+{"abbreviation": "WLC", "description": "A device that manages wireless network access points, providing centralized control and management of the wireless network."}
+{"abbreviation": "WPA", "description": "A security protocol developed to secure wireless networks, providing stronger data protection and network access control than WEP."}
+{"abbreviation": "www", "description": "A system of interlinked hypertext documents and multimedia content accessed via the internet, forming the basis of the World Wide Web."}
