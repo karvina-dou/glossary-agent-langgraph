@@ -1,0 +1,6 @@
+TheReverse Address Resolution Protocol(RARP) is an obsolete computercommunication protocolused by aclient computerto request its Internet Protocol (IPv4) address from acomputer network, when all it has available is itslink layeror hardware address, such as aMAC address.The client broadcasts the request and does not need prior knowledge of the network topology or the identities of servers capable of fulfilling its request.
+RARP has been rendered obsolete by theBootstrap Protocol(BOOTP) and the modernDynamic Host Configuration Protocol(DHCP), which both support a much greater feature set than RARP.
+RARP requires one or more server hosts to maintain a database of mappings oflink layeraddresses to their respective protocol addresses. MAC addresses need to be individually configured on the servers by an administrator. RARP is limited to serving onlyIP addresses.
+Reverse ARP differs from theInverse Address Resolution Protocol(InARP), which is designed to obtain the IP address associated with a localFrame Relaydata link connection identifier.InARP is not used inEthernet.
+Although the original uses for RARP have been superseded by different protocols, some modern-day protocols use RARP to handle MAC migration, particularly in virtual machines, using a technique originating inQEMU.
+Examples include:

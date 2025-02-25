@@ -1,0 +1,8 @@
+# sample config for running kv-pipeline on kv-data
+model_args:
+  model: "qwen2.5:32b"
+  api_key: "Fcca@118010142"
+  openai_api_base: "http://10.71.20.11:8010/v1"
+  temperature: 0
+
+dataset: "kv"
