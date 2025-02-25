@@ -5,11 +5,11 @@ model_args:
   openai_api_base: "http://10.71.20.11:8010/v1"
   temperature: 0
 
-data_path: "./data/kv_data"
-workflow: "kv"
-max_case: 10
-max_concurrency: 5
-preprocess_fn: "sentence_split"
+data_path: "./data/wiki_data"
+workflow: "reg"
+max_case: -1
+max_concurrency: 10
+preprocess_fn: "reg"
 
 # parsing
 del_keys: 
