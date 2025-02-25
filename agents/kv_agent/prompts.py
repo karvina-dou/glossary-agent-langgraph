@@ -33,7 +33,7 @@ Please respond only with the full form of the abbreviation, no additional explan
 '''
 
 validate_prompt = '''
-You are a professional abbreviation explanation assistant. Your task is to choose the most contextually appropriate full form of an abbreviation from a list of options.
+You are a professional abbreviation explaination assistant. Your task is to choose the most contextually appropriate full form of an abbreviation from a list of options.
 Please follow the steps:
 1. Given an abbreviation, its context, and a list of possible full expansions, choose the most suitable one.
 2. If there is only one possible expansion, determine if it is suitable for the given context. If it is not suitable, suggest a more appropriate expansion.
